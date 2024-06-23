@@ -4,9 +4,8 @@ import static java.lang.Math.*;
 
 public class TriangleArea {
     public static double area(double a, double b, double c) {
-        double semiper = (a + b + c) / 2;
-        double result = sqrt(semiper * (semiper - a) * (semiper - b) * (semiper - c));
-        return result;
+        double semiPer = (a + b + c) / 2;
+        return sqrt(semiPer * (semiPer - a) * (semiPer - b) * (semiPer - c));
     }
 
     public static void main(String[] args) {
