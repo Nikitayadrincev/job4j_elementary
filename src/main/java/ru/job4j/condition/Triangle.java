@@ -6,8 +6,8 @@ public class Triangle {
     }
 
     public static void main(String[] args) {
-        System.out.println(Triangle.exist(10, 10, 10));
-        System.out.println(Triangle.exist(0, 7, 5));
-        System.out.println(Triangle.exist(10, 10, 30));
+        System.out.println(Triangle.exist(3, 4, 5));
+        System.out.println(Triangle.exist(0, 2, 5));
+        System.out.println(Triangle.exist(3, 4, 8));
     }
 }
