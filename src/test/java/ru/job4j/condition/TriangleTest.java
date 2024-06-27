@@ -10,17 +10,17 @@ class TriangleTest {
     void whenExist() {
         double ab = 10;
         double ac = 10;
-        double bc = 30;
+        double bc = 10;
         boolean result = Triangle.exist(ab, ac, bc);
-        assertThat(result).isFalse();
+        assertThat(result).isTrue();
     }
 
     @Test
     void whenNotExist() {
         double ab = 10;
         double ac = 10;
-        double bc = 10;
+        double bc = 30;
         boolean result = Triangle.exist(ab, ac, bc);
-        assertThat(result).isTrue();
+        assertThat(result).isEqualTo(false);
     }
 }
