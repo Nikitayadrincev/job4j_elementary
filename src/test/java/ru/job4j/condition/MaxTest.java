@@ -29,4 +29,12 @@ class MaxTest {
         int expected = 58;
         assertThat(Max.max(left, right)).isEqualTo(expected);
     }
+
+    @Test
+    void whenMax0to0then0() {
+        int left = 0;
+        int right = 0;
+        int expected = 0;
+        assertThat(Max.max(left, right)).isEqualTo(expected);
+    }
 }
