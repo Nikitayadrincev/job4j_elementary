@@ -7,7 +7,7 @@ public class LogicNot {
 
     public static boolean isPositive(int num) {
         if (num == 0) {
-            return false;
+            return num < 0;
         } else {
             return num > 0;
         }
@@ -19,7 +19,7 @@ public class LogicNot {
 
     public static boolean notPositive(int num) {
         if (num == 0) {
-            return false;
+            return num < 0;
         } else {
             return !isPositive(num);
         }
