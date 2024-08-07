@@ -8,33 +8,28 @@ class MaxTest {
 
     @Test
     void whenMaxMinus58to85then85() {
-        int left = -58;
-        int right = 85;
+        int first = -58;
+        int second = 85;
         int expected = 85;
-        assertThat(Max.max(left, right)).isEqualTo(expected);
+        assertThat(Max.max(first, second)).isEqualTo(expected);
     }
 
     @Test
-    void whenMax0to2then2() {
-        int left = 0;
-        int right = 2;
-        int expected = 2;
-        assertThat(Max.max(left, right)).isEqualTo(expected);
+    void whenMax0to50to102then2() {
+        int first = 0;
+        int second = 50;
+        int third = 10;
+        int expected = 50;
+        assertThat(Max.max(first, second, third)).isEqualTo(expected);
     }
 
     @Test
     void whenMax58toMinus85then85() {
-        int left = 58;
-        int right = -85;
-        int expected = 58;
-        assertThat(Max.max(left, right)).isEqualTo(expected);
-    }
-
-    @Test
-    void whenMax0to0then0() {
-        int left = 0;
-        int right = 0;
-        int expected = 0;
-        assertThat(Max.max(left, right)).isEqualTo(expected);
+        int first = 58;
+        int second = -85;
+        int third = 0;
+        int forth = 100;
+        int expected = 100;
+        assertThat(Max.max(first, second, third, forth)).isEqualTo(expected);
     }
 }
